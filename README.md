@@ -8,11 +8,16 @@ Requires a config.json file in the root that looks like this:
   "accounts": [
     {
       "name": "aws-account-name",
+      "disabled": false,
       "credentials":  {
           "accessKeyId": "account access key id",
           "secretAccessKey": "account secret access key",
           "sessionToken": "account session token"
-      }
+      },
+      "regions": [
+        "eu-west-2",
+        "us-east-1"
+      ]
     },
     ...
   ]
